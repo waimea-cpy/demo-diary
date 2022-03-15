@@ -1,0 +1,257 @@
+:root {
+    --back-col:   #2196F3;
+    --back-dark:  #0069c0;
+    --back-light: #fff;
+    --back-menu:  #222;
+
+    --accent:     #f44336;
+    --highlight:  #fffde7;
+    
+    --text-col:   #222;
+    --text-inv:   #fff;
+
+    --shadow:     rgba(0,0,0, 0.5);
+}
+
+html {
+    font-family: system-ui, sans-serif;
+    font-size: 18px;
+}
+
+
+body {
+    background: var(--back-col);
+    color: var(--text-inv);
+}
+
+
+header, footer, nav, main, div, p, h1, h2, h3, ul, ol, li {
+    /* outline: 1px solid red; */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+#main-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+    background: var(--back-dark);
+    color: var(--text-inv);
+    box-shadow: 0 0.25rem 0.5rem var(--shadow);
+}
+
+#main-header a {
+    text-decoration: none;
+    color: var(--text-inv);
+}
+
+
+
+
+#main-nav img {
+    width: 2rem;
+    height: 2rem;
+}
+
+#main-nav li a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#main-nav li img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+#main-nav input {
+    display: none;
+}
+
+#main-nav input:not(:checked) ~ ul {
+    display: none;
+}
+
+#main-nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+
+    background: var(--back-menu);
+    color: var(--text-inv);
+    box-shadow: 0 0 1rem var(--shadow);
+    font-size: 1.5rem;
+
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+main {
+    padding: 2rem 1rem;
+    max-width: 40rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#diary-entries li {
+    background: var(--back-light);
+    color: var(--text-col);
+    box-shadow: 0 0.25rem 0.5rem #00000080;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+#diary-entries h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+}
+
+#diary-entries p {
+    max-height: 4rem;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, 
+                                        black 0%, 
+                                        black 60%, 
+                                        transparent);
+    -webkit-mask-size: 100% 4rem;
+}
+
+#diary-entries a {
+    text-decoration: none;
+    color: var(--text-col);
+}
+
+
+
+#add-new {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+
+    background: var(--accent);
+    color: var(--text-inv);
+    border-radius: 4rem;
+    border: none;
+    box-shadow: 0 0.25rem 0.75rem var(--shadow);
+}
+
+#add-new img {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+form {
+    box-shadow: 0 0.25rem 0.5rem #00000080;
+    background: var(--back-light);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+form h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--accent);
+}
+
+label {
+    display: block;
+    /* font-size: 1rem; */
+    color: var(--accent);
+}
+
+input, textarea {
+    display: block;
+    font-size: 1.3rem;
+    padding: 0.3rem 0.8rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    background: var(--highlight);
+    border: 2px solid var(--back-dark);
+}
+
+textarea {
+    min-height: 10rem;
+}
+
+input[type=submit] {
+    margin: 2.5rem auto 0;
+    width: auto;
+
+    background: var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: var(--text-inv);
+    border: none;
+    box-shadow: 0 0.1rem 0.2rem var(--shadow);
+}
+
+
+/* Diary entry view */
+
+div.entry {
+    background: var(--back-light);
+    box-shadow: 0 0.25rem 0.5rem var(--shadow);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+div.entry h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--accent);
+}
+
+div.entry p {
+    color: var(--text-col);
+}
+
+
+div.controls {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.controls a {
+    display: block;
+    padding: 0.5rem 1rem;
+
+    font-size: 1.3rem;
+    text-decoration: none;
+
+    background: var(--accent);
+    color: var(--text-inv);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.1rem 0.2rem var(--shadow);
+}
+
+div.controls img {
+    width: 2rem;
+    height: 2rem;
+}

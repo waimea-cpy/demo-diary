@@ -1,0 +1,24 @@
+
+
+header, footer, nav, main, div, p, h1, h2, h3, ul, ol, li {
+    outline: 1px solid red;
+}
+
+#parent {
+    padding: 1rem;
+    background: #369;
+    color: #fff;
+    font-size: 3rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.child {
+    background: #036;
+    width: 20rem;
+}
+
