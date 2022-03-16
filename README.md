@@ -20,30 +20,30 @@ Site has a simple but responsive UI, including:
 
 Entry List
 
-![Entry List](images/ui-list.png)
+![Entry List](ui/ui-list.png)
 
 Entry View
 
-![Entry View](images/ui-view.png)
+![Entry View](ui/ui-view.png)
 
 New Entry
 
-![New Entry](images/ui-new.png)
+![New Entry](ui/ui-new.png)
 
 Edit Entry
 
-![Edit Entry](images/ui-edit.png)
+![Edit Entry](ui/ui-edit.png)
 
 Search
 
-![Search](images/ui-search.png)
+![Search](ui/ui-search.png)
 
 Search Results
 
-![Search Results](images/ui-found.png)
+![Search Results](ui/ui-found.png)
 
 Menu
 
-![Menu](images/ui-menu.png)
+![Menu](ui/ui-menu.png)
 
 
